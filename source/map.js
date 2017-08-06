@@ -1,8 +1,7 @@
 import {EasyMap} from 'easy-maps';
 import {Map, View, layer, source, proj} from 'openlayers';
 
-export class EasyMapOpenlayers extends EasyMap {
-    static engineName = 'Openlayers';
+export class OpenlayersMap extends EasyMap {
     mount(target) {
         this.map = new Map({
             layers: [
@@ -11,7 +10,7 @@ export class EasyMapOpenlayers extends EasyMap {
                 })
             ],
             view: new View({
-                center: proj.fromLonLat([-0.09, 51.505]),
+                center: proj.fromLonLat([2.183333, 41.383333]),
                 zoom: 13
             }),
             target
