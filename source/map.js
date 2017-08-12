@@ -16,4 +16,7 @@ export class OpenlayersMap extends EasyMap {
             target
         });
     }
+    get isMounted() {
+        return Boolean(this.map);
+    }
 }
